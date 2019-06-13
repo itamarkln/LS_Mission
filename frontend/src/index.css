@@ -1,0 +1,125 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.form-control input,
+input {
+  width: 100%;
+  padding: 1rem 0;
+  margin: 10px 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  font: inherit;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .2);
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control input::placeholder,
+input::placeholder,
+input:focus {
+  padding-left: 10px;
+}
+
+.form-error__message > p,
+.form-success__message > p {
+    color: red;
+    margin: 10px 0;
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+.form-success__message > p {
+    color: #15eeab;
+}
+
+.form-actions button[type="submit"],
+.btn {
+  font: inherit;
+  margin-top: 10px;
+  background: #15EEAB;
+  border: 0;
+  padding: 12px 40px;
+  color: #fff;
+  font-size: 0.9rem;
+  transition: 0.4s;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  box-shadow: 1px 3px 3px 1px rgba(151, 160, 191, .4);
+}
+
+.btn {
+  float: initial;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.form-actions button[type="submit"]:hover,
+.form-actions button[type="submit"]:active,
+.btn:hover,
+.btn:active {
+  background: #1d1d1d;
+}
+
+/* Snackbar Popup. */
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}

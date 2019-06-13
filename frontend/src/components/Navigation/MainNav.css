@@ -1,0 +1,111 @@
+.main-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 4.8rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 24px rgba(151, 160, 191, .4);
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.main-nav__logo h1 {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+.main-nav__items {
+    margin-left: 1.6rem;
+}
+
+.main-nav__items ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.main-nav__items ul li {
+    margin: 0 1rem;
+}
+
+.main-nav__toggle-btn {
+    display: none;
+}
+
+.main-nav__items ul li a,
+.main-nav__items ul li button,
+.main-nav__toggle-btn {
+    font: inherit;
+    text-decoration: none;
+    color: #1d1d1d;
+    transition: 0.4s;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.main-nav__items ul li a:hover,
+.main-nav__items ul li a:active,
+.main-nav__items ul li a.active,
+.main-nav__items ul li button:hover,
+.main-nav__items ul li button:active,
+.main-nav__items ul li button.active,
+.main-nav__toggle-btn:hover,
+.main-nav__toggle-btn:active,
+.main-nav__toggle-btn.active {
+    color: #15eeab;
+}
+
+/* Responsive appearance */
+@media screen and (max-width: 768px) {
+    .blank {
+        display: none;
+    }
+    .main-nav {
+        display: block;
+        height: initial;
+        padding: 1.2rem 0;
+    }
+    .main-nav__logo {
+        display: inline-flex;
+    }
+    .wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .main-nav__toggle-btn {
+        display: inline-flex;
+    }
+
+    .main-nav__items {
+        margin-left: 0;
+        transition: 0.4s;
+    }
+    
+    .main-nav__items ul {
+        margin: 2.8rem 1rem 0.4rem 1rem;
+        padding: 0;
+        list-style: none;
+        display: block;
+        align-items: center;
+    }
+
+    .main-nav__items ul li {
+        padding-bottom: 0.6rem;
+        list-style: none;
+        display: block;
+        align-items: center;
+        width: 100%;
+        transition: 0.4s;
+    }
+}

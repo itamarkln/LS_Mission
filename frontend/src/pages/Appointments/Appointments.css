@@ -1,0 +1,20 @@
+.appoints-control {
+    font: inherit;
+    text-align: center;
+    border: 12px solid #f4f4f4;
+    padding: 2.8rem;
+    margin: 4rem auto;
+    width: 34rem;
+    max-width: 60%;
+}
+
+.appoints-control .btn {
+    padding: 10px 20px;
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 768px) {
+    .appoints-control {
+        width: initial;
+    }
+}

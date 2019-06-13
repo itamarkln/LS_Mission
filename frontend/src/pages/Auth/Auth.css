@@ -1,0 +1,43 @@
+.auth-form {
+    font: inherit;
+    width: 25rem;
+    max-width: 80%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.auth-form h1 {
+    font-weight: 500;
+}
+
+.form-actions {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.auth-form .form-actions button.switch-form-state-btn {
+    font: inherit;
+    background: transparent;
+    border: none;
+    text-decoration: underline;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.auth-form .form-actions button.switch-form-state-btn:focus {
+    outline: 0;
+}
+
+@media screen and (max-width: 520px) {
+    .auth-form .form-actions button {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .form-actions {
+        display: block;
+    }
+    .auth-form h1 {
+        font-size: 1.6rem;
+    }
+}

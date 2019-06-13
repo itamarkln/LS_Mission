@@ -1,0 +1,7 @@
+{
+    "env": {
+        "MONGO_USER": "itamar",
+        "MONGO_PASSWORD": "NSTCqPbd1PkgzWOz",
+        "MONGO_DB": "dogs-barber-shop"
+    }
+}
